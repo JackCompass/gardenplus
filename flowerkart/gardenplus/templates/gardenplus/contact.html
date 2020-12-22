@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -20,31 +22,31 @@
 	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/animate.css' %}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/icomoon.css' %}">
 	<!-- Ion Icon Fonts-->
-	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/ionicons.min.css' %}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/bootstrap.min.css' %}">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/magnific-popup.css' %}">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/flexslider.css' %}">
 
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/owl.theme.default.min.css' %}">
 	
 	<!-- Date Picker -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/bootstrap-datepicker.css' %}">
 	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/fonts/flaticon/font/flaticon.css' %}">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{% static 'gardenplus/css/style.css' %}">
 
 	</head>
 	<body>
@@ -71,7 +73,7 @@
 					<div class="row">
 						<div class="col-sm-12 text-left menu-1">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="{% url 'index' %}">Home</a></li>
 								<li class="has-dropdown">
 									<a href="men.html">Men</a>
 									<ul class="dropdown">
@@ -83,8 +85,8 @@
 									</ul>
 								</li>
 								<li><a href="women.html">Women</a></li>
-								<li><a href="about.html">About</a></li>
-								<li class="active"><a href="contact.html">Contact</a></li>
+								<li><a href="{% url 'about' %}">About</a></li>
+								<li class="active"><a href="{% url 'contact' %}">Contact</a></li>
 								<li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
 							</ul>
 						</div>
@@ -285,31 +287,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="{% static 'gardenplus/js/jquery.min.js' %}"></script>
    <!-- popper -->
-   <script src="js/popper.min.js"></script>
+   <script src="{% static 'gardenplus/js/popper.min.js' %}"></script>
    <!-- bootstrap 4.1 -->
-   <script src="js/bootstrap.min.js"></script>
+   <script src="{% static 'gardenplus/js/bootstrap.min.js' %}"></script>
    <!-- jQuery easing -->
-   <script src="js/jquery.easing.1.3.js"></script>
+   <script src="{% static 'gardenplus/js/jquery.easing.1.3.js' %}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{% static 'gardenplus/js/jquery.waypoints.min.js' %}"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="{% static 'gardenplus/js/jquery.flexslider-min.js' %}"></script>
 	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="{% static 'gardenplus/js/owl.carousel.min.js' %}"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="{% static 'gardenplus/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'gardenplus/js/magnific-popup-options.js' %}"></script>
 	<!-- Date Picker -->
-	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="{% static 'gardenplus/js/bootstrap-datepicker.js' %}"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="{% static 'gardenplus/js/jquery.stellar.min.js' %}"></script>
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+	<script src="{% static 'gardenplus/js/google_map.js' %}"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="{% static 'gardenplus/js/main.js' %}"></script>
 
 	</body>
 </html>
