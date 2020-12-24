@@ -12,3 +12,6 @@ def about(request):
 
 def contact(request):
 	return render(request, 'gardenplus/contact.html')
+
+def products(request):
+	return render(request, 'gardenplus/products.html')
