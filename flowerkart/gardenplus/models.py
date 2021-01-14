@@ -4,6 +4,7 @@ from django.db import models
 
 class Products(models.Model):
 	name = models.CharField(max_length=100)
+	description = models.TextField(default = 'This is one of the main product of our company.')
 	price = models.FloatField()
 	img = models.ImageField(upload_to = 'images/', default='Not Available')
 

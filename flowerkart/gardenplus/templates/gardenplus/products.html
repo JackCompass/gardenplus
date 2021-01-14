@@ -227,6 +227,8 @@
 					<div class="col-lg-9 col-xl-9">
 						<div class="row row-pb-md">
 
+					<!-- Implementing the pagination -->
+
 						{% for item in product %}
 							<div class="col-lg-4 mb-4 text-center">
 								<div class="product-entry border">
@@ -234,8 +236,8 @@
 										<img src="{{ item.img.url }}" class="img-fluid" alt="Free html5 bootstrap 4 template">
 									</a>
 									<div class="desc">
-										<h2><a href="#">{{ item.name }}</a></h2>
-										<span class="price">{{ item.id }}</span>
+										<h2><a href="{% url 'details' item.id %}">{{ item.name }}</a></h2>
+										<span class="price">{{ item.price }}</span>
 									</div>
 								</div>
 							</div>
