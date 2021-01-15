@@ -26,7 +26,7 @@
 					<div class="row">
 						<div class="col-sm-12 text-left menu-1">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="{% url 'index' %}">Home</a></li>
 								<li class="has-dropdown">
 									<a href="men.html">Men</a>
 									<ul class="dropdown">
@@ -37,10 +37,10 @@
 										<li><a href="add-to-wishlist.html">Wishlist</a></li>
 									</ul>
 								</li>
-								<li class="active"><a href="women.html">Women</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+								<li class="active"><a href="{% url 'products' %}">Products</a></li>
+								<li><a href="{% url 'about' %}">About</a></li>
+								<li><a href="{% url 'contact' %}">Contact</a></li>
+								<li class="cart"><a href="{% url 'cart' %}"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
 							</ul>
 						</div>
 					</div>
@@ -74,7 +74,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="bread"><span><a href="index.html">Home</a></span> / <span>Women</span></p>
+						<p class="bread"><span><a href="{% url 'index' %}">Home</a></span> / <span>Products</span></p>
 					</div>
 				</div>
 			</div>
@@ -277,19 +277,19 @@
 				</div>
 				<div class="row">
 					<div class="col partner-col text-center">
-						<img src="images/brand-1.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="{% static 'gardenplus/images/brand-1.jpg' %}" class="img-fluid" alt="Free html4 bootstrap 4 template">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand-2.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="{% static 'gardenplus/images/brand-2.jpg' %}" class="img-fluid" alt="Free html4 bootstrap 4 template">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand-3.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="{% static 'gardenplus/images/brand-3.jpg' %}" class="img-fluid" alt="Free html4 bootstrap 4 template">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand-4.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="{% static 'gardenplus/images/brand-4.jpg' %}" class="img-fluid" alt="Free html4 bootstrap 4 template">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand-5.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="{% static 'gardenplus/images/brand-5.jpg' %}" class="img-fluid" alt="Free html4 bootstrap 4 template">
 					</div>
 				</div>
 			</div>
